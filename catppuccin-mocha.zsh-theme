@@ -1,0 +1,41 @@
+catppuccin_rosewater="#f5e0dc"
+catppuccin_flamingo="#f2cdcd"
+catppuccin_pink="#f5c2e7"
+catppuccin_mauve="#cba6f7"
+catppuccin_red="#f38ba8"
+catppuccin_maroon="#eba0ac"
+catppuccin_peach="#fab387"
+catppuccin_yellow="#f9e2af"
+catppuccin_green="#a6e3a1"
+catppuccin_teal="#94e2d5"
+catppuccin_sky="#89dceb"
+catppuccin_sapphire="#74c7ec"
+catppuccin_blue="#89b4fa"
+catppuccin_lavender="#b4befe"
+catppuccin_text="#cdd6f4"
+catppuccin_subtext1="#bac2de"
+catppuccin_subtext0="#a6adc8"
+catppuccin_overlay2="#9399b2"
+catppuccin_overlay1="#7f849c"
+catppuccin_overlay0="#6c7086"
+catppuccin_surface2="#585b70"
+catppuccin_surface1="#45475a"
+catppuccin_surface0="#313244"
+catppuccin_base="#1e1e2e"
+catppuccin_mantle="#181825"
+catppuccin_crust="#11111b"
+
+PROMPT="%(?:%F{${catppuccin_green}}%1{➜%} :%F{${catppuccin_red}}%1{➜%} )"
+if [ "$CATPPUCCIN_SHOW_TIME" = true ];
+then
+  PROMPT+="%F{${catppuccin_mauve}}%T%  "
+fi
+
+PROMPT+="%F{${catppuccin_pink}}%n%  "
+PROMPT+="%F{${catppuccin_blue}}%c%{$reset_color%}"
+PROMPT+=' $(git_prompt_info)'
+
+ZSH_THEME_GIT_PROMPT_PREFIX="%F{${catppuccin_teal}}("
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
+ZSH_THEME_GIT_PROMPT_DIRTY="%F{${catppuccin_teal}}) %F{${catppuccin_yellow}}%1{✗%}"
+ZSH_THEME_GIT_PROMPT_CLEAN="%F{${catppuccin_teal}}) %F{${catppuccin_green}}%1{✔%}"
