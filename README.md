@@ -2,6 +2,7 @@
 
 ## Screenshot
 ![Screenshot of the catppuccin mocha flavor](screenshots/mocha.png)
+This screenshot shows the mocha flavor of catppuccin.
 
 ## Installation
 ``` sh
