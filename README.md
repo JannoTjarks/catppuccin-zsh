@@ -1,5 +1,9 @@
 # Catppuccin for zsh
 
+## Screenshot
+![Screenshot of the catppuccin mocha flavor](screenshots/mocha.png)
+This screenshot shows the mocha flavor of catppuccin.
+
 ## Installation
 ``` sh
 git clone https://github.com/JannoTjarks/catppuccin-zsh.git
