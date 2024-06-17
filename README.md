@@ -5,6 +5,7 @@
 This screenshot shows the mocha flavor of catppuccin.
 
 ## Installation
+### Using [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
 ``` sh
 git clone https://github.com/JannoTjarks/catppuccin-zsh.git
 mkdir ~/.oh-my-zsh/themes/catppuccin-flavors
