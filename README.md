@@ -1,8 +1,27 @@
 # Catppuccin for zsh
 
-## Screenshot
-![Screenshot of the catppuccin mocha flavor](screenshots/mocha.webp)
-This screenshot shows the mocha flavor of catppuccin.
+<p align="center">
+	<img src="assets/catwalk.webp"/>
+</p>
+
+## Previews
+
+<details>
+<summary>🌻 Latte</summary>
+<img src="assets/latte.webp"/>
+</details>
+<details>
+<summary>🪴 Frappé</summary>
+<img src="assets/frappe.webp"/>
+</details>
+<details>
+<summary>🌺 Macchiato</summary>
+<img src="assets/macchiato.webp"/>
+</details>
+<details>
+<summary>🌿 Mocha</summary>
+<img src="assets/mocha.webp"/>
+</details>
 
 ## Installation
 ### Using [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
