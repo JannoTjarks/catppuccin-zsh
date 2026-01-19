@@ -39,4 +39,5 @@ Add the following lines to you zsh configuration:
 ZSH_THEME="catppuccin"
 CATPPUCCIN_FLAVOR="mocha" # Required! Options: mocha, flappe, macchiato, latte
 CATPPUCCIN_SHOW_TIME=true  # Optional! If set to true, this will add the current time to the prompt.
+CATPPUCCIN_SHOW_HOSTNAME="never"  # Optional! Options: never, always, ssh
 ```

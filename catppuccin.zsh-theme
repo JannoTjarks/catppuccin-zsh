@@ -1,3 +1,7 @@
+# Customisation Options
+: ${CATPPUCCIN_SHOW_HOSTNAME:="never"} # never, always, ssh
+
+
 if [ "$CATPPUCCIN_FLAVOR" = "frappe" ]; then
     source ${0:A:h}/catppuccin-flavors/catppuccin-frappe.zsh
 elif [ "$CATPPUCCIN_FLAVOR" = "latte" ]; then
@@ -8,8 +12,16 @@ else
     source ${0:A:h}/catppuccin-flavors/catppuccin-mocha.zsh
 fi
 
-
 PROMPT="%(?:%F{${catppuccin_green}}%1{➜%} :%F{${catppuccin_red}}%1{➜%} )"
+
+if [ "$CATPPUCCIN_SHOW_HOSTNAME" = "ssh" ]; then
+    if [[ -n "$SSH_CONNECTION" ]]; then
+        PROMPT+="%F{${catppuccin_mauve}}[%m] "
+    fi
+elif [ "$CATPPUCCIN_SHOW_HOSTNAME" = "always" ]; then
+    PROMPT+="%F{${catppuccin_sky}}[%m] "
+fi
+
 if [ "$CATPPUCCIN_SHOW_TIME" = true ];
 then
   PROMPT+="%F{${catppuccin_mauve}}%T%  "
